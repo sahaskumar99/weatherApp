@@ -7,7 +7,7 @@
     <title>Weather</title>
    
     <style>
-        p{
+        h2{
             text-align: center;
         }
         #myimg{
@@ -19,26 +19,42 @@
         }
         .drops{
             text-align: center;
+            border: 3px solid black ;
+            height: 10cm;
+            margin-left: 10cm;
+            margin-right: 10cm;
+            background-color: azure;
+         
+           
         }
+        .button{
+  
+  position: relative;
+}
         </style>
          <script src="whetherapp.js"></script>
 
 </head>
-<body>
-    <h1 style="text-align: center;">Welcome to Weather App</h1>
-    <p>Select the place</p> 
+<body style="background-color:papayawhip;">
+    <h1 style="text-align: center;color: coral;">Welcome to Weather App</h1>
+    <h2 style="color: darkturquoise;">Lets find the Weather Today!!</h2> 
     <div class="drops">
         <select id="myDropdown">
-            <option value = "hyderabad">Hyderabad</option>
-                <option value = "chennai">Chennai</option>
-                <option value = "banglore">Banglore</option>
+            <option value = "Hyderabad">Hyderabad</option>
+                <option value = "Chennai">Chennai</option>
+                <option value = "Nalgonda">Nalgonda</option>
+                <option value = "Delhi">Delhi</option>
+                <option value = "Kerala">Kerala</option>
             </select>
+            <button value="submit" name="submit" onclick="fun()" class="button">Check</button><br>
+            <h3 id="mypara"></h3>
+            <h3 id="humidity"></h3>
+            <h3 id="place"></h3>
+            <img id="myimg" src='' />
     </div>
+    
         
-    <p id="mypara"></p>
-    <p id="place"></p>
-
-    <img id="myimg" src='' />
+   
     
 
 </body>
