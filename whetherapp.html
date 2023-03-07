@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+   
+    <style>
+        p{
+            text-align: center;
+        }
+        #myimg{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+        }
+        .drops{
+            text-align: center;
+        }
+        </style>
+         <script src="whetherapp.js"></script>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to Weather App</h1>
+    <p>Select the place</p> 
+    <div class="drops">
+        <select id="myDropdown">
+            <option value = "hyderabad">Hyderabad</option>
+                <option value = "chennai">Chennai</option>
+                <option value = "banglore">Banglore</option>
+            </select>
+    </div>
+        
+    <p id="mypara"></p>
+    <p id="place"></p>
+
+    <img id="myimg" src='' />
+    
+
+</body>
+</html>
